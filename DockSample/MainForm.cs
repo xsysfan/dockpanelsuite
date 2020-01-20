@@ -25,7 +25,7 @@ namespace DockSample
             InitializeComponent();
             AutoScaleMode = AutoScaleMode.Dpi;
 
-            SetSplashScreen();
+            // SetSplashScreen();
             CreateStandardControls();
 
             showRightToLeft.Checked = (RightToLeft == RightToLeft.Yes);
@@ -34,7 +34,7 @@ namespace DockSample
             m_deserializeDockContent = new DeserializeDockContent(GetContentFromPersistString);
             
             vsToolStripExtender1.DefaultRenderer = _toolStripProfessionalRenderer;
-            SetSchema(this.menuItemSchemaVS2013Blue, null);
+            SetSchema(this.menuItemSchemaVS2005, null);
         }
 
         #region Methods
@@ -495,7 +495,6 @@ namespace DockSample
 
         private void SetSplashScreen()
         {
-            
             _showSplash = true;
             _splashScreen = new SplashScreen();
 
